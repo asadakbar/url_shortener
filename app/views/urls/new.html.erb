@@ -1,0 +1,11 @@
+<h1>Insert Url in the box below</h1>
+<p>
+
+  <%= form_for(@new_url) do |url| %>
+
+    <%= url.label :long_url %>
+    <%= url.text_field :long_url %>
+
+    <%= url.submit %>
+
+  <%end%>

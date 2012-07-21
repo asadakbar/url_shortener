@@ -1,0 +1,16 @@
+<h1>Urls#index</h1>
+<p>Find me in app/views/urls/index.html.erb</p>
+
+<%= link_to "Create",  new_url_path  %>
+
+<% @urls.each do |url|%>
+
+<h3>  <%= url.long_url %></h3>
+
+<ul>
+  <li>
+    <%= url.id %>
+  <li>
+    <%= link_to url.short_url, "localhost:3000/#{url.short_url}" %>
+  </ul>
+<% end %>
